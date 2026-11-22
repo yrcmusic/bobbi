@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<style>
+  :root { --bg: #fff; --ink: #111; --line: #e5e5e5; --link: #5865f2; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111214; --ink: #ececec; --line: #2a2b2e; --link: #8ea1ff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h1 + p { margin-top: 0; }
+  h2 { font-size: 17px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 6px 0; }
+  ul { padding-left: 20px; }
+  a { color: var(--link); text-decoration: none; word-break: break-word; }
+  a:hover { text-decoration: underline; }
+  em { font-style: normal; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>{{ page.title }}</h1>
+{{ content }}
+</main>
+</body>
+</html>
